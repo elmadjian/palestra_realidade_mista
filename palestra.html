@@ -1,0 +1,1039 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Realidade Mista e Cultura 3D</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="theme/custom.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <!--		<link rel="stylesheet" href="css/kube.min.css">-->
+
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+
+
+
+            <!-- APRESENTAÇÃO -->
+            <div class="slides">
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/bg.jpg">
+                    <h1>Realidade Mista</h1>
+                    <p class="smaller">Carlos Eduardo (Cadu) Elmadjian</p>
+                    <p class="smaller">Andrew (Toshi) Kurauchi</p>
+                    <p class="smaller">José Antonio Tula Leyva</p>
+                    <p class="smaller" style="color:#42f4a4;">LaTIn (latin.ime.usp.br)</p>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Frase motivacional (parte I)</h3>
+                    <p class="fragment" data-fragment-index="1"><i>"A realidade é aquela que, quando você para de acreditar nela, ela não vai embora."</i></p>
+                    <p class="smaller fragment" data-fragment-index="1">Philip K. Dick</p>
+                    <aside class="notes">
+                        Dizem que é bonito começar uma apresentação com uma frase motivacional.
+                        Alguém sabe quem é Philip K. Dick? [levanta a mão]
+                        Alguém concorda com essa frase? [levanta a mão]
+                        E alguém discorda? [levanta a mão]
+                        É engraçado que a gente vai falar de "realidade mista" hoje e a gente nem consegue definir o que é realidade.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#388979">
+                    <div class="row fragment">
+                        <img src="imgs/augmented_reality%5Bsolidworks.com%5D.jpg" width=50% alt="">
+                        <p class="subtitle" style="text-align:center; margin-top:-4%">solidworks.com</p>
+                    </div>
+                    <div class="row fragment">
+                        <img src="imgs/virtual_reality%5Bbbc.com%5D.jpg" width=50% alt="">
+                        <p class="subtitle" style="text-align:center; margin-top:-4%; color:black;">bbc.com</p>
+                    </div>
+                    <aside class="notes">
+                        [Aponta pra imagem] Isso aqui, por exemplo, é realidade?
+                        Essa coisa desenhada aqui na tela é real?
+                        [Aponta pra segunda imagem] E cidadão muito louco? Ele está na realidade?
+                        O que ele tá vivenciando não é real?
+                        Bom, como muitos de vocês já devem ter ouvido falar, a primeira imagem
+                        exemplifica um caso de experiência de realidade aumentada, enquanto a 
+                        segunda, de realidade virtual.
+                        Se você olhar o noticiário de tecnologia, as pessoas estão falando o tempo todo
+                        sobre realidade aumentada e virtual; você fica até confuso. 
+                        Até agora eu não sei por que me pediram pra falar sobre isso, então eu decidi
+                        perguntar ao Google por que as pessoas se interessam pelo assunto...
+                    </aside>
+                </section>
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/google01.jpg">
+                    <aside class="notes">
+                        Daí, curiosamente, eu notei que quando você procura por "realidade virtual",
+                        as pessoas em geral estão interessadas pelo headset (o treco que você
+                        veste na cabeça), mas também estão interessadas por aplicações, em especial
+                        jogos e educação.
+                    </aside>    
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/google02.jpg">
+                    <aside class="notes">
+                        Daí, quando você procura por "realidade aumentada", pra minha surpresa,
+                        as pessoas parecem estar preocupadas exatamente com as mesmas coisas:
+                        o dispositivo que você usa, jogos, aplicações em educação, a não ser
+                        por esse último item que parece ser mais uma das bizarrices que vêm do Japão.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/bing-bg.png" data-transition="slide-in fade-out">
+                    <aside class="notes">
+                        Pra não me acusarem de proselitismo em favor do Google, também decidi
+                        fazer a mesma coisa na concorrência e, surpreendentemente, os resultados
+                        foram também bastante parecidos.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/bing-bg2.png" data-transition="fade-in slide-out">
+                    <aside class="notes">
+                        A única diferença é que a concorrência enfia os produtos dela no meio
+                        dos resultados de busca, mas tudo bem...
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#4291bc">
+                    <img class="plain" src="imgs/superbondermontage.png" alt="">
+                    <aside class="notes">
+                        Mas tirando esse interesse em comum das pessoas, existe mais alguma coisa que
+                        une realidade aumentada e realidade virtual?
+                        Como essas coisas se relacionam?
+                        A ciência explica isso?
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/taxonomy2%5Bpinterest.com%5D.jpg" data-transition="slide-in fade-out">
+                    <aside class="notes">
+                        E a resposta é: sim!
+                        Em 1993, dois cientistas chamados Paul Milgram e Fuimio Kishino fizeram algo
+                        que cientistas, em geral, adoram fazer: criaram uma classificação
+                        pra essas coisas (ou "taxonomia", se você preferir)
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-transition="fade-in none">
+                    <h1 class="bigger">Continuum da virtualidade</h1>
+                    <aside class="notes">
+                        Essa taxonomia ficou conhecida como o "Continuum da Virtualidade".
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm01.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns" style="min-height:160px;">   </div>
+                        <div class="three columns">   </div>
+                        <div class="three columns">   </div>
+                        <div class="three columns">   </div>
+                    </div>
+                    <aside class="notes">
+                        No continuum da virtualidade, existe um espectro cujas extremidades são
+                        o que nós chamamos de realidade e o que chamamos de virtualidade, ou seja,
+                        só existe computacionalmente. E no meio desse espaço existem experiências
+                        intermediárias de realidade.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm02.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns">
+                            <video autoplay loop src="vids/tangible_media.webm"></video>
+                            <p class="tiny"> https://www.youtube.com/watch?v=rki-svV5gCI</p>
+                        </div>
+                        <div class="three columns">   </div>
+                        <div class="three columns">   </div>
+                        <div class="three columns">   </div>
+                    </div>
+                    <aside class="notes">
+                        Assim, por exemplo, mais perto aqui da realidade, a gente tem as chamadas
+                        interfaces tangíveis, que são interfaces físicas, que você pode segurar
+                        e apertar com as mãos, sentir o feedback físico delas, mas ao mesmo tempo
+                        elas não são 100% reais porque existe algum nível de virtualização
+                        que foi inserida por um computador.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm03.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns">                            
+                            <video autoplay loop src="vids/tangible_media.webm"></video>
+                            <p class="tiny"> https://www.youtube.com/watch?v=rki-svV5gCI</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=ihKUoZxNClA</p>
+                        </div>
+                        <div class="three columns">   </div>
+                        <div class="three columns">   </div>
+                    </div>
+                    <aside class="notes">
+                        Agora se você começar a inserir objetos completamente virtuais
+                        em um ambiente real, é isso que se convencionou chamar de realidade aumentada.
+                        Basicamente, o que você está fazendo é enriquecendo o mundo com coisas
+                        virtuais, mas você ainda tá mais no mundo físico que no virtual.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm04.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns">                           
+                            <video autoplay loop src="vids/tangible_media.webm"></video>
+                            <p class="tiny"> https://www.youtube.com/watch?v=rki-svV5gCI</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=ihKUoZxNClA</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_virtuality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=1ozadUAwE5Q</p>
+                        </div>
+                        <div class="three columns">   </div>
+                    </div>
+                    <aside class="notes">
+                        Existe então um conceito pouquíssimo explorado (mesmo na literatura)
+                        que é o de virtualidade aumentada. Ou seja, nele, você já está num
+                        mundo que é sintético, mas você adiciona elementos da realidade
+                        concreta.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm05.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns">                            
+                            <video autoplay loop src="vids/tangible_media.webm"></video>
+                            <p class="tiny"> https://www.youtube.com/watch?v=rki-svV5gCI</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=ihKUoZxNClA</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_virtuality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=1ozadUAwE5Q</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/virtual_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=i4Zt3JZejbg</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        E, finalmente, mais para a outra extremidade, nós temos a realidade
+                        virtual, em que você tem a imersão completa do indivíduo
+                        em um ambiente 100% sintético. Veja que mesmo sendo um mundo
+                        completamente virtual, você não deixa de sentir resposta dos
+                        seus controles, ainda existe uma ligação sua com o mundo físico,
+                        mas a ideia da realidade virtual é substituir sua realidade.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#b7e2c2" data-transition="none slide-out">
+                    <h1 style="color:black;">Continuum da virtualidade</h1>
+                    <div class="row">
+                        <img class="plain" src="imgs/rm06.png" alt="">
+                    </div>
+                    <div class="row centered">
+                        <div class="three columns">                            
+                            <video autoplay loop src="vids/tangible_media.webm"></video>
+                            <p class="tiny"> https://www.youtube.com/watch?v=rki-svV5gCI</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=ihKUoZxNClA</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/augmented_virtuality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=1ozadUAwE5Q</p>
+                        </div>
+                        <div class="three columns">
+                            <video autoplay loop src="vids/virtual_reality.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=i4Zt3JZejbg</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        E finalmente, todo esse espectro entre realidade concreta e
+                        ambiente completamente virtual nós chamamos de realidade mista
+                        (ou misturada, se você preferir).
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Recapitulando...</h3>
+                    <br>
+                    <table>
+                        <tr style="background-color:#555">
+                            <th></th>
+                            <th>Realidade Aumentada</th>
+                            <th>Realidade Virtual</th>
+                            <th>Realidade Mista</th>
+                        </tr>
+                        <tr>
+                            <td><b>Academia</b></td>
+                            <td class="smallfont fragment">- Combina real com virtual<br>- Acontece em tempo real<br>- Registro em 3D</td>
+                            <td class="smallfont fragment">- Completamente imersiva<br>- Ambiente sintético</td>
+                            <td class="smallfont fragment">- Espectro realidade-virtualidade</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid;">
+                            <td><b>Indústria</b></td>
+                            <td class="smallfont fragment">- Não precisa ser em 3D<br>- Poucos elementos virtuais</td>
+                            <td class="smallfont fragment">- Não necessariamente sintética</td>
+                            <td class="smallfont fragment">- Registro em 3D<br>- Elementos virtuais arbitrários</td>
+                        </tr>
+                    </table>
+                    <aside class="notes">
+                        Então, recapitulando, na realidade aumentada, a gente tem uma combinação do real com o virtual,
+                        as coisas acontecem em tempo real e tudo o que é virtual está alinhado com o mundo físico.
+                        Na realidade virtual, a experiência já é completamente imersiva, você é desligado da
+                        realidade concreta. E a realidade mista é basicamente o conjunto dessas experiências intermediárias.
+                        O problema é que o setor de publicidade da indústria realmente acredita que tem uma
+                        interpretação melhor do que essa, e como eles têm capilaridade na mídia, isso acaba
+                        sendo fonte de muita confusão entre as pessoas.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Mas fica pior:</h3>
+                    <img src="imgs/mediatedreality.png" alt=""><br>
+                    <p style="font-size:35%;">http://wearcam.org/presence_connect/</p>
+                    <aside class="notes">
+                        Pra piorar, não pra dizer exatamente que existe consenso no meio acadêmico. Alguns pesquisadores,
+                        como o Steve Mann, acreditam que você poderia ainda adulterar a forma como você percebe
+                        a realidade, e não apenas adicionar coisas a ela, e isso criaria uma nova dimensão de
+                        "mediação" da realidade.
+                        Mas tudo bem, vamos parar por aqui na taxonomia.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/dinosaurs.jpg">
+                    <h2>Voltando ao passado</h2>
+                    <aside class="notes">
+                        E agora vamos visitar um pouco o passado para entender como chegamos nesse estado confuso.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-image="imgs/lfrankbaum.jpg">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            L. Frank Baum imaginou como seria um óculos de realidade aumentada no livro <i>A Chave Mestra</i>
+                        </div>
+                        <div class="nine columns"></div>
+                        <div class="footnote" style="background-color:rgba(0,0,0,0.5)">http://newwwoz.blogspot.com.br/2012/11/the-master-key.html</div>
+                    </div>
+                    <aside class="notes">
+                        Curiosamente, as pessoas às vezes acham que certas ideias que estão na onda na computação
+                        são extremamente recentes. Mas o que a história mostra é que muitas coisas são imaginadas
+                        e criadas no passado e ficam esquecidas para só depois serem ressucitadas décadas mais tarde.
+                        Em relação à realidade aumentada, algumas pessoas se deram conta de que a ideia de
+                        óculos de RA não surgiu com a computação vestível, mas já havia sido pensada pelo
+                        criador do Mágico de Oz, L. Frank Baum, no livro A Chave Mestra.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/sensorama.webm">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            <i>Sensorama</i>, de Morton Heilig, era um dispositivo para "todos os sentidos", inclusive olfato.
+                        </div>
+                        <div class="nine columns"></div>
+                    </div>
+                    <div class="footnote">https://www.youtube.com/watch?v=vSINEBZNCks</div>
+                    <aside class="notes">
+                        A ideia de imersão completa em outra realidade também já havia sido tentada por
+                        um sujeito nos anos 80 chamado Morton Heilig, com uma máquina chamada Sensorama.
+                        A ideia não foi pra frente, mas ele chegou a fazer esse protótipo, que tinha
+                        até um ventilador pra mandar cheirinho.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/sutherland.webm">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            Em 1968, Ivan Sutherland criou a <i>Espada de Dâmocles</i>, o primeiro HMD funcional de que se tem notícia.
+                        </div>
+                        <div class="nine columns"></div>
+                    </div>
+                    <div class="footnote">https://www.youtube.com/watch?v=NtwZXGprxag</div>
+                    <aside class="notes">
+                        Em 1968, o Ivan Sutherland (guardem esse nome) criou o primeiro head-mounted display
+                        (esse treco de vestir na cabeça). Não era algo que dava pra usar na rua, obviamente,
+                        e o poder de renderização gráfica era incrivelmente limitado, mas mesmo assim,
+                        esse senhor era visionário e se você se interessa por computação gráfica,
+                        leia a história dele.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/videoplace.webm">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            Chamado de "realidade artificial" por Myron Krueger, o <i>Videoplace</i> permitia interação dos usuários.
+                        </div>
+                        <div class="nine columns"></div>
+                    </div>
+                    <div class="footnote">https://www.youtube.com/watch?v=dqZyZrN3Pl0</div>
+                    <aside class="notes">
+                        Depois, já entre os anos 70 e 80, o Myron Krueger propôs um sistema que ele chamou de
+                        realidade artifical com o qual os usuários poderiam interagir entre si.
+                        Mas não tinha uma aplicação muito óbvia e era algo que também flertava
+                        com a experimentação artística.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/nasa.webm">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            O projeto VIEW da NASA é considerado hoje o grande precursor da tecnologia de realidade virtual.
+                        </div>
+                        <div class="nine columns"></div>
+                    </div>
+                    <div class="footnote">https://www.youtube.com/watch?v=DRME41ZB8Cw</div>
+                    <aside class="notes">
+                        Foi o projeto VIEW da NASA que introduziu uma série de conceitos, técnicas e equipamentos que
+                        até hoje são empregados em interação 3D. Um dos criadores da luvinha que foi usada nesse
+                        projeto foi o Jaron Lanier, que também é um sujeito interessantíssimo.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/virtualboy.webm">
+                    <div class="row">
+                        <div class="three columns boxsub">
+                            O fracasso do <i>Nintendo Virtual Boy</i> em meados dos anos 1990 afastou toda a indústria de entretenimento dos ambientes virtuais.
+                        </div>
+                        <div class="nine columns"></div>
+                    </div>
+                    <div class="footnote">https://www.youtube.com/watch?v=OyVAp0tOk5A</div>
+                    <aside class="notes">
+                        Até que em 1995, mais ou menos, a Nintendo foi uma das grandes responsáveis por uma tentativa de homicídio qualificado
+                        da incipiente indústria de realidade virtual com o Virtual Boy. O projeto todo era ruim, o console era pesado e não
+                        podia ficar preso à cabeça. Não havia posição confortável pra jogar. A tela era monocromática/vermelha, os controles
+                        eram ruins, havia pouquíssimos títulos e eles exploravam muito pouco a imersão. O resultado foi um atraso
+                        de décadas no desenvolvimento da tecnologia.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h4>Legal, legal, mas...</h4>
+                    <h2>como funciona?</h2>
+                </section>
+
+
+                <section>
+                    <h3>Frase motivacional (parte II)</h3>
+                    <p class="fragment" data-fragment-index="1"><i>"Qualquer tecnologia suficientemente avançada é indistinguível de magia."</i></p>
+                    <p class="smaller fragment" data-fragment-index="1">Arthur C. Clarke</p>
+                    <aside class="notes">
+                        Essa é só para pensar mesmo.
+                    </aside>
+                </section>
+
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/rift.webm">
+                    <div class="footnote">https://www.youtube.com/watch?v=aNSYscbxFAw</div>
+                    <aside class="notes">
+                        Acho que você pode dizer que a campanha no Kickstarter para financiar o Oculus Rift foi uma espécie de
+                        divisor de águas no universo da realidade virtual. O que o pessoal da Oculus fez foi basicamente
+                        utilizar uma série de avanços tecnológicos produzidos pela indústria de dispositivos móveis.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-transition="slide-in fade-out">
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/3Dperception%5Bvr-lens-lab.com%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-7.5%;">vr-lens-lab.com</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/riftsound%5Bvrheads.com%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-9%;">vrheads.com</p>
+                        </div>
+                    </div>
+
+
+                    <aside class="notes">
+                        Um típico headset de realidade virtual possui uma tela grande o bastante para criar a ilusão de imersão;
+                        espacialização do som (som 3D); uma imagem diferente gerada para cada olho (estereoscopia); sensores
+                        de posicionamento (acelerômetros, giroscópios e magnetômetros); e um boa placa gráfica para renderizar
+                        um universo sintético em alta frequência
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-transition="fade">
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/lenses%5Bvr-lens-labs.com%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-8%">vr-lens-lab.com</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/lenses2%5Bvr-lens-lab.com%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-8%">vr-lens-lab.com</p>
+                        </div>
+                    </div>
+
+
+                    <aside class="notes">
+                        Um típico headset de realidade virtual possui uma tela grande o bastante para criar a ilusão de imersão;
+                        espacialização do som (som 3D); uma imagem diferente gerada para cada olho (estereoscopia); sensores
+                        de posicionamento (acelerômetros, giroscópios e magnetômetros); e um boa placa gráfica para renderizar
+                        um universo sintético em alta frequência
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-transition="fade">
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/inertialsensors%5Bozzmaker.com%5D.png" alt="">
+                            <p class="subtitle" style="color:#888; margin-top:-7%; text-align:center;">ozzmaker.com</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/geforce%5Bnvidia.com%5D.png" alt="">
+                            <p class="subtitle" style="margin-top:-8.5%;">nvidia.com</p>
+                        </div>
+                    </div>
+
+
+                    <aside class="notes">
+                        Um típico headset de realidade virtual possui uma tela grande o bastante para criar a ilusão de imersão;
+                        espacialização do som (som 3D); uma imagem diferente gerada para cada olho (estereoscopia); sensores
+                        de posicionamento (acelerômetros, giroscópios e magnetômetros); e um boa placa gráfica para renderizar
+                        um universo sintético em alta frequência
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-transition="fade">
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/estereoscopia%5Bdoc-ok.org%5D.png" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-8%">doc-ok.org</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/estereoscopia%5Bdiscovery.wisc.edu%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">discovery.wisc.edu</p>
+                        </div>
+                    </div>
+
+
+                    <aside class="notes">
+                        Um típico headset de realidade virtual possui uma tela grande o bastante para criar a ilusão de imersão;
+                        espacialização do som (som 3D); uma imagem diferente gerada para cada olho (estereoscopia); sensores
+                        de posicionamento (acelerômetros, giroscópios e magnetômetros); e um boa placa gráfica para renderizar
+                        um universo sintético em alta frequência
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/sickness.webm">
+                    <h4>Ah, mas tem um porém...</h4>
+                    <div class="footnote">https://www.youtube.com/watch?v=yczrE08LJ-0</div>
+                    <aside class="notes">
+                        Um dos problemas típicos dos dispositivos de realidade virtual é o chamado "motion/VR sickness". Isso
+                        acontece quando há sinais conflitantes da nossa percepção chegando ao cérebro ao mesmo tempo.
+                        Há diversas formas de criar motion sickness: você pode estar sentado numa cadeira, mas vendo um
+                        mundo em que você está em queda livre; você pode mexer a cabeça, mas percebe um atraso na imagem...
+                        Tudo isso gera mal-estar, enjoo e impede que as pessoas usem esses equipamentos por muito tempo.
+                    </aside>
+                </section>
+
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Em relação à realidade aumentada...</h3>
+                    <div style="margin:0 -8% 0 15%">               
+                        <div class="row">
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao01%5Bpsfk.com%5D.jpg" alt="">
+                                <p class="subtitle">psfk.com</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao02%5Bedtechreview.in%5D.jpg" alt="">
+                                <p class="subtitle" style="color:black;">edtechreview.in</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao03%5Bdigitalurban.org%5D.png" alt="">
+                                <p class="subtitle">digitalurban.org</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao04%5Bdigitaltrends.com%5D.jpg" alt="">
+                                <p class="subtitle">digitaltrends.com</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao05%5Baugmentedrealiytrends.com%5D.jpg" alt="">
+                                <p class="subtitle" style="color:black;">augmentedrealitytrends.com</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao06%5Baugmentedrealitytrends.com%5D.jpg" alt="">
+                                <p class="subtitle">augmentedrealitytrends.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao07%5Bthesocialmediamonthly.com%5D.png" alt="">
+                                <p class="subtitle">thesocialmediamonthly.com</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao08%5Bartishock.com%5D.jpg" alt="">
+                                <p class="subtitle" style="color:black;">artishock.com</p>
+                            </div>
+                            <div class="three columns">
+                                <img class="plain" src="imgs/aplicacao09%5Breadwrite.com%5D.jpg" alt="">
+                                <p class="subtitle">readwrite.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <aside class="notes">
+                        No universo da realidade aumentada, não se pode dizer o mesmo. Ainda existem inúmeras
+                        dificuldades técnicas para misturar o virtual com o real de maneira convincente. Mas por outro
+                        lado, trata-se de um desafio reconhecidamente mais complexo que o de RV.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Mas não é a mesma coisa</h3>
+                    <br>
+                    <ul>
+                        <li class="fragment">Pouco controle do ambiente</li>
+                        <li class="fragment">Acurácia é muito importante</li>
+                        <li class="fragment">Sem consenso tecnológico</li>
+                    </ul>
+
+                    <aside class="notes">
+                        No universo da realidade aumentada, não se pode dizer o mesmo. Ainda existem inúmeras
+                        dificuldades técnicas para misturar o virtual com o real de maneira convincente. Mas por outro
+                        lado, trata-se de um desafio reconhecidamente mais complexo que o de RV.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/display_ar.png" alt="">
+                        </div>
+                        <div class="six columns">
+                            <img src="imgs/augmented_reality%5Bsolidworks.com%5D.jpg" alt="">
+                            <p class="subtitle" style=" margin-top:-8%;">solidworks.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/videoseethrough%5Bcinoptics.com%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-8%;">cinoptics.com</p>
+                        </div>
+                        <div class="six columns">
+                            <img src="imgs/moverio%5Bepson.co.uk%5D.jpg" alt="">
+                            <p class="subtitle" style="color:black; margin-top:-8%;">epson.co.uk</p>
+                        </div>
+                    </div>
+
+                    <aside class="notes">
+                        Para começar, em AR, temos várias possibilidades de displays, o que impacta diretamente
+                        como o usuário interage com as aplicações. Idealmente, para ter uma experiência "mágica"
+                        nos termos do Arthur C. Clarke, óculos usáveis e translúcidos parecem ser a melhor
+                        alternativa, mas também a mais difícil de fazer funcionar direito.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/arinterface%5Bubergizmo.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">ubergizmo.com</p>
+                        </div>
+                        <div class="six columns">
+                            <img src="imgs/arinterface%5Bappdevelopermagazine.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">appdevelopermagazine.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <img src="imgs/arinterface%5Bzugara.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">zugara.com</p>
+                        </div>
+                        <div class="six columns">
+                            <img src="imgs/arinterface%5Bouterchart.com%5D.png" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">outerchart.com</p>
+                        </div>
+                    </div>
+
+                    <aside class="notes">
+                        Em termos de interfaces, as coisa é ainda pior porque ninguém sabe exatamente como
+                        desenvolver uma boa experiência interagindo com essas coisas 3D. A gente sabe já um 
+                        bom tempo no 2D, mas no 3D é outra história. Você tem objetos artificiais, não palpáveis,
+                        que não necessariemente obedecem às regras da realidade. Algumas pessoas sugeriram codificar
+                        os elementos em algo palpável (interfaces tangíveis), outras sugeriram algo no estilo
+                        Minority Report, outra ideia seria interagir com o display (no caso de handhelds),
+                        ou ainda gestos com a mão.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/artag.webm">
+                    <div class="footnote" style="color:black;">https://www.youtube.com/watch?v=8kCxQMU0p_k</div>
+                    <div class="three columns boxsub">
+                        Como se fazia o rastreamento no começo...
+                    </div>
+                    <aside class="notes">
+                        Mas uma das coisas que certamente evoluiu muito nas últimas décadas foi o rastreamento.
+                        As primeiras abordagens para criar uma experiência de realidade aumentada apareceram na
+                        década de 1990 e consistiam no uso de marcadores fiduciários. Esses marcadores têm esse nome
+                        porque já sabemos de antemão algumas de suas características, como forma e tamanho. Isso
+                        nos permite estimar a posição de qualquer objeto virtual na cena a partir de uma câmera
+                        calibrada.
+
+                        Embora a técnica seja razoavelmente robusta, ela não é muito prática. Mudanças de iluminação
+                        no ambiente, oclusão parcial dos marcadores, a necessidade de ter que preparar um ambiente,
+                        o aspecto estético... Tudo isso acaba limitando a quantidade de cenários em que poderíamos
+                        usar marcadores desse tipo.
+                    </aside>
+                </section>
+
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/nft.webm">
+                    <div class="footnote">https://www.youtube.com/watch?v=Ud8wbrRKPIU</div>
+                    <div class="footnote" style="line-height:4;">https://www.youtube.com/watch?v=D2PF-r_XOX0</div>
+                    <div class="three columns boxsub">
+                        Rastreamento de características naturais: maior robustez (e processamento)
+                    </div>
+                    <aside class="notes">
+                        Foi então que alguém teve a ideia de usar uma coisa chamada NFT (natural feature tracking).
+                        Em vez de usar marcadores fiduciários tradicionais, passou-se a usar as próprias características
+                        naturais das imagens para conhecer quais as transformações necessárias para desenhar um
+                        objeto virtual na cena. Isso tem uma série de vantagens: primeiro, qualquer coisa plana
+                        com algum nível de textura e "quinas" pode ser tornar um marcador; segundo, você pode ocultar
+                        parte do marcador (basta que haja um número suficiente de pontos a serem rastreados);
+                        terceiro, a cena PODE não precisar ser preparada previamente.
+
+                        Mas alguns problemas ainda persistem. Você precisa fazer um treinamento prévio dos pontos
+                        de interesse; ainda não é possível ter realidade aumentada em qualquer lugar
+                        dessa forma porque você não pode contar que a cena terá superfícies planas ou com texturas com
+                        boas features; ambientes com variação de iluminação ainda são um problema grave.
+                    </aside>
+                </section>
+
+
+
+                <!-- SLIDE -->
+                <section data-background-video="vids/ptam.webm">
+                    <div class="footnote">https://www.youtube.com/watch?v=Y9HMn6bd-v8</div>
+                    <div class="three columns boxsub">
+                        SLAM: mapeamento tridimensional do mundo em tempo real
+                    </div>
+                    <aside class="notes">
+                        Nos últimos anos, tem se falado cada vez mais de mepeamento tridimensional do ambiente
+                        para uma experiência verdadeira de realidade aumentada. Com isso, marcadores tornam-se
+                        desnecessários, pois o sistema passa a manter atualizado o tempo todo uma malha 3D
+                        da cena. Com isso, uma vez colocado um objeto virtual na cena, ele "permanece" onde está.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <div class="row">
+                        <div class="six columns fragment">
+                            <video autoplay loop src="vids/ucla.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=CE1B7tdGCw0</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <video autoplay loop src="vids/tango.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=iHN4c7FYXYs</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="six columns fragment">
+                            <video autoplay loop src="vids/hololens.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=ihKUoZxNClA</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <video autoplay loop src="vids/magicleap.webm"></video>
+                            <p class="tiny">https://www.youtube.com/watch?v=lP5ZZI05A3g</p>
+                        </div>
+
+                    </div>
+                    <aside class="notes">
+                        Mas para isso, em geral usamos mais de uma câmera e diversos outros sensores. Dessa
+                        forma, conseguimos ter uma noção da profundidade das coisas, espacializar o som das coisas
+                        virtuais, identificar movimentos do usuário, saber para onde ele está olhando, etc. Isso é 
+                        o que o HoloLens da Microsoft faz e é o que supostamente o Magic Leap deverá fazer também. 
+
+                        Ainda assim, há diversos problemas técnicos a serem resolvidos, como o campo de visão,
+                        o problema da acomodação em HMDs, acurácia do modelo, iluminação, superfícies não rígidas... 
+                        E mesmo que todos esses problemas se resolvam, nós ainda não estaremos no patamar da realidade 
+                        virtual pelo simples fato de que nosso controle computacional sobre a realidade material é muito 
+                        inferior ao nosso cotrole de um mundo completamente virtual.
+                    </aside>
+                </section>
+
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Problemas pós-BCC</h3>
+                    <div class="row">
+                        <div class="six columns fragment">
+                            <img src="imgs/problem01%5Bpotentash.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">potentash.com</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/problem02%5Bcgsd.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">cgsd.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns fragment">
+                            <img src="imgs/problem03%5Bthingpic.com%5D.jpeg" alt="">
+                            <p class="subtitle" style="margin-top:-8%; color:black;">thingpic.com</p>
+                        </div>
+                        <div class="six columns fragment">
+                            <img src="imgs/problem04%5Baskideas.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-8%;">askideas.com</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Mas não acaba aí. Mesmo que fosse possível resolvermos todos os problemas técnicos envolvendo
+                        realidade mista, há ainda um abismo nos separando de uma solução razoável para interação
+                        com essas coisas. Além de todas as implicações éticas e sociais de fazer com que as pessoas
+                        potencialmente levem suas vidas cada vez mais presas a uma realidade personalizada e única.
+                        Será que queremos isso? Será que queremos uma ilusão perfeita? Será que queremos algo que não
+                        vai embora quando a gente para de acreditar?
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#aa42f4" data-transition="slide-in fade-out">
+                    <h3>Alguns conselhos</h3>
+                    <div class="row fragment">
+                        <p>1.cuidado com o hype</p>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Bdailymail.co.uk%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-13%;">dailymail.co.uk</p>                       
+                        </div>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Bpinimg.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-13%;">pinterest.com</p>
+                        </div>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Bnbcnews.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-13%;">nbcnews.com</p>
+                        </div>
+                    </div>
+                    <div class="row fragment">
+                        <p>2.cuidado com o hype do hype</p>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Banglenubiangoatsociety.com%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-13%; color:black;">anglenubiangoatsociety.com</p>
+                        </div>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Bbrainz.org%5D.png" alt="">
+                            <p class="subtitle" style="margin-top:-13%;">brainz.org</p>
+                        </div>
+                        <div class="four columns">
+                            <img src="imgs/hype%5Btheloop.ca%5D.jpg" alt="">
+                            <p class="subtitle" style="margin-top:-13%;">theloop.ca</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Bom, mas antes de terminar, se você se interessa pelo assunto, um alerta: 
+                        cuidado com o HYPE.
+                        [cachorro surfando]
+                        Uma ideia ruim sempre pode ser piorada.
+                        [outros animais surfando]
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section data-background-color="#aa42f4" data-transition="fade">
+                    <h3>Alguns conselhos</h3><br>
+                    <ul>
+                        <li class="fragment">Aprenda bem os conceitos <span class="smaller">(os professores vivem dizendo isso e é verdade!)</span></li>
+                        <li class="fragment">Leia os <i>surveys</i>, não o {Gizmodo,TecMundo,Meiobit...}</li>
+                        <li class="fragment">Não fique só na leitura: implemente</li>
+                    </ul>
+                    <aside class="notes">
+                        Pessoas que gostam dessas coisas não deveriam votar talvez, mas paciência. O conselho que
+                        a gente deixa para vocês, em primeiro lugar, é:
+                        - aprenda os conceitos para diferenciar realidade de ficção
+                        - leia os surveys na literatura acadêmica para saber em que pé estamos, não sites de reputação questionável.
+                    </aside>
+                </section>
+
+
+                <!-- SLIDE -->
+                <section>
+                    <h3>Disciplinas importantes</h3><br>
+                    <ul>
+                        <li>Vetores e Geometria (MAT0112)</li>
+                        <li>Álgebra Linear (MAT0122)</li>
+                        <li>Computação Gráfica (MAC0420)</li>
+                        <li>Visão Computacional (MAC0417)</li>
+                        <li>Interação Humano-Computador (MAC0446)</li>
+                    </ul>
+                    <p class="fragment">Sim, a sua trilha é <span style="color:#42f4a4; font-weight:bold;">Ciência de dados</span> :-)</p>
+                    <aside class="notes">
+                        A segunda coisa é que se você realmente quer estudar essas coisas, sinto muito lhe informar,
+                        mas você vai ter que ser minimamente competente e erudito em várias áreas. Trata-se de um assunto
+                        multidisciplinar que frequentemente funde o cérebro das pessoas. O meu já deu PT.
+
+                        Você muito provavelmente terá que ter uma boa formação de:
+                        - Álgebra Linear
+                        - Computação Gráfica
+                        - Visão Computacional
+                        - Interação Humano-Computador
+
+                        Se você quiser ir mais pra parte de áudio, também recomendamos
+                        - Computação Musical
+
+                        Dependendo do problema que você quer estudar, também ajuda bastante ter conhecimentos de:
+                        - Cálculo IV (Fourier)
+                        - Aprendizado de Máquina
+                        - Autômatos
+
+                    </aside>
+                </section>
+
+                <section data-background-color="#e5cb39">
+                    <h1>Perguntas?</h1>
+                </section>
+
+
+            </div>
+            <!-- FIM DA APRESENTAÇÃO -->
+
+
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                width: 1024,
+                height: 768,
+                controls: false,
+                slideNumber: true,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
