@@ -2,7 +2,7 @@
 
 Este repositório contém a palestra sobre realidade mista apresentada no dia 20/06/2017 no âmbito da disciplina MAC0101, do curso de Ciência da Computação do IME/USP.
 
-Para ver a palestra, simplesmente abre o arquivo `palestra.html` em algum navegador **moderno**, com suporte a HTML5. Use as setas do teclado para mudar de slide.
+Para ver a palestra, simplesmente abra o arquivo `palestra.html` em algum navegador **moderno**, com suporte a HTML5. Use as setas do teclado para mudar de slide.
 
 ## Licença
 Você pode usar essa palestra onde você quiser e como bem entender, desde que faça a devida atribuição dos autores, indicando a fonte original.
