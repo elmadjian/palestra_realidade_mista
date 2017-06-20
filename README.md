@@ -7,6 +7,6 @@ Este repositório contém a palestra sobre realidade mista apresentada no dia 20
 * Andrew Kurauchi
 * José Antonio Tula Leyva
 
-#### Outras informações
-Somos integrantes do Laboratório de Tecnologias de Interação (LaTIn) - IME/USP. Se você se interessa pelo assunto e gostaria de fazer pesquisas na área, entre em contato com a gente.
-Para saber mais, acesse: [latin.ime.usp.br](http://latin.ime.usp.br)
+## Outras informações
+Somos integrantes do Laboratório de Tecnologias de Interação (LaTIn) - IME/USP. Se você é aluno do IME, se interessa pelo assunto e gostaria de fazer pesquisa na área, entre em contato com a gente.
+Para saber mais, acesse: [latin.ime.usp.br](http://latin.ime.usp.br).
